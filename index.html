@@ -397,10 +397,28 @@
           </li>
         </ul>
       </div>
+
+      <form class="footer-form">
+        <p class="footer-form-text">Подпишитесь на рассылку</p>
+
+        <div class="footer-form-wrapper">
+          <label class="footer-form-field">
+            <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail">
+          </label>
+  
+          <button type="submit" class="footer-form-btn">Подписаться
+            <svg class="footer-icon-btn">
+            <use href="./images/sprite.svg#icon-icon-send"></use>
+          </svg>
+          </button>
+        </div>
+
+      </form>
+
     </div>
   </footer>
 
-  <div class="bacdrop " data-modal> is-hidden
+  <div class="bacdrop is-hidden" data-modal> 
     <div class="modal">
         <svg class="close-btn" data-modal-close>
           <use href="./images/sprite.svg#icon-close"></use>
@@ -444,8 +462,8 @@
               <textarea class="modal-form-massage" name="user-massage" placeholder="Введите текст"></textarea>
             </label>
 
-            <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="modal-form-policy visually-hidden">
-            <label for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+            <input id="user-policy" class="modal-form-policy visually-hidden" type="checkbox" name="user-policy" value="accept-policy" >
+            <label for="user-policy" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-text-link" href="#">Условия договора</a></label>
 
             <button type="submit" class="modal-form-btn">Отправить</button>
         </form>
